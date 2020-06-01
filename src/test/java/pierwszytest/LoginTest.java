@@ -65,8 +65,8 @@ public class LoginTest {
         // Now you can do whatever you need to do with it, for example copy somewhere
 
         try {
-            FileUtils.copyFile(screenshot, new File("c:\\scr\\screenshot.png"));
-            // linux: FileUtils.copyFile(screenshot, new File("/home/user/scr/screenshot.png"));
+            // FileUtils.copyFile(screenshot, new File("c:\\scr\\screenshot.png"));
+            FileUtils.copyFile(screenshot, new File("/home/user/scr/screenshot.png"));
         } catch (Exception e) {
             System.out.println("Nie udało się zapisać pliku na dysku.");
         }
